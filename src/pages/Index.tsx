@@ -6,6 +6,7 @@ import TiltablePricingCard from "@/components/TiltablePricingCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import StickyScrollFeatures from "@/components/StickyScrollFeatures";
 import HeroBackground from "@/components/HeroBackground";
+import CreativeCTASection from "@/components/CreativeCTASection";
 
 const Index = () => {
   return (
@@ -116,20 +117,8 @@ const Index = () => {
           </div>
         </section>
         
-        {/* CTA Section */}
-        <section className="bg-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <AnimateOnScroll className="text-center bg-card rounded-2xl p-10 border shadow-xl">
-              <h2 className="text-3xl font-bold text-foreground mb-4">Ready to build your winning pitch?</h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                Join thousands of startups and founders who trust PitchSpark to create stunning presentations.
-              </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20 font-bold py-3 px-8 text-lg rounded-full transition-transform hover:scale-105">
-                Sign Up Now <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </AnimateOnScroll>
-          </div>
-        </section>
+        {/* CTA Section - Now using the new creative component */}
+        <CreativeCTASection />
       </main>
       
       {/* Footer */}
