@@ -67,16 +67,45 @@ const StickyScrollFeatures = () => {
     <div ref={containerRef} className="relative max-w-3xl mx-auto" style={{ height: containerHeight }}>
       <div className="sticky top-24 h-[calc(100vh-6rem)] flex items-center justify-center">
         <div className="relative w-full h-full flex items-center justify-center">
-          {featuresData.map((feature, index) => (
-            <div
-              key={feature.title}
-              className={`absolute inset-x-0 transition-opacity duration-300 ease-in-out ${
-                index === activeCardIndex ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <FeatureCard {...feature} />
-            </div>
-          ))}
+          {featuresData.map((feature, index) => {
+            const distance = activeCardIndex - index;
+
+            // Handle future cards that are not yet visible
+            if (distance < 0) {
+              return (
+                <div
+                  key={feature.title}
+                  className="absolute inset-x-0 transition-all duration-300 ease-out"
+                  style={{
+                    opacity: 0,
+                    transform: 'translateY(30px) scale(1.05)',
+                    zIndex: index,
+                  }}
+                >
+                  <FeatureCard {...feature} />
+                </div>
+              );
+            }
+
+            // Calculate styles for active and previous cards
+            const scale = 1 - distance * 0.05;
+            const translateY = -distance * 20; // in pixels
+            const zIndex = featuresData.length - distance;
+
+            return (
+              <div
+                key={feature.title}
+                className={`absolute inset-x-0 transition-all duration-300 ease-out`}
+                style={{
+                  transform: `translateY(${translateY}px) scale(${scale})`,
+                  zIndex,
+                  opacity: 1, // All previous and active cards are visible
+                }}
+              >
+                <FeatureCard {...feature} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
