@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 import TiltablePricingCard from "@/components/TiltablePricingCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import StickyScrollFeatures from "@/components/StickyScrollFeatures";
-import HeroBackground from "@/components/HeroBackground";
 
 const Index = () => {
   return (
@@ -14,9 +13,8 @@ const Index = () => {
 
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="relative py-20 sm:py-24 overflow-hidden">
-          <HeroBackground />
-          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 sm:py-24">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <AnimateOnScroll animationDelay="200ms">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
