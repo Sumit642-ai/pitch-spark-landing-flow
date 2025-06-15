@@ -6,13 +6,12 @@ interface FeatureCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
-  animationDelay?: string;
+  className?: string;
 }
 
-const FeatureCard = ({ icon, title, description, animationDelay }: FeatureCardProps) => (
+const FeatureCard = ({ icon, title, description, className }: FeatureCardProps) => (
   <Card 
-    className="text-center p-6 bg-card border border-white/10 shadow-lg hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-300 rounded-xl h-full opacity-0 animate-fade-in-up"
-    style={{ animationDelay }}
+    className={`text-center p-6 bg-card border border-white/10 shadow-lg hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-300 rounded-xl h-full ${className || ''}`}
   >
     <CardHeader className="flex justify-center items-center mb-4 p-0">
       <div className="bg-primary/10 rounded-full p-4">
