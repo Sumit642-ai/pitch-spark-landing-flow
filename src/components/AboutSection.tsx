@@ -77,7 +77,7 @@ const AboutSection = () => {
               className="lg:col-span-1"
             >
               <div 
-                className={`bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer ${zoomedCard === index ? 'scale-110 z-30' : ''}`}
+                className={`bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer ${zoomedCard === index ? 'scale-125 z-30' : ''}`}
                 onClick={() => handleCardClick(index)}
               >
                 <div className="text-center mb-4">
