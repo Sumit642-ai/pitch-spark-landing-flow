@@ -1,8 +1,19 @@
 
 import * as THREE from 'three';
-import React, { useRef, useMemo } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useRef, useMemo, useEffect } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Icosahedron, Dodecahedron } from '@react-three/drei';
+
+const CameraController = () => {
+  const { camera } = useThree();
+  useEffect(() => {
+    camera.position.set(0, 0, 15);
+    camera.fov = 60;
+    camera.updateProjectionMatrix();
+  }, [camera]);
+
+  return null;
+};
 
 const FloatingShapes = () => {
   const groupRef = useRef<THREE.Group>(null!);
@@ -57,7 +68,8 @@ const FloatingShapes = () => {
 const HeroBackground = () => {
   return (
     <div className="absolute inset-0 z-0 opacity-70">
-      <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
+      <Canvas>
+        <CameraController />
         <ambientLight intensity={1} />
         <pointLight position={[20, 20, 20]} intensity={0.5} />
         <FloatingShapes />
