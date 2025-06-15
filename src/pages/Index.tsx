@@ -1,10 +1,9 @@
-
 import Navbar from "@/components/Navbar";
-import FeatureCard from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart3, BrainCircuit, LayoutTemplate, Palette } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import PricingCard from "@/components/PricingCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import StickyScrollFeatures from "@/components/StickyScrollFeatures";
 
 const Index = () => {
   return (
@@ -51,36 +50,7 @@ const Index = () => {
                 From AI-generated content to beautiful design, we've got you covered.
               </p>
             </AnimateOnScroll>
-            <div className="grid grid-cols-1 gap-8 md:gap-12 max-w-3xl mx-auto">
-              <AnimateOnScroll animationDelay="200ms" exitAnimation="up">
-                <FeatureCard
-                  icon={<BrainCircuit className="h-10 w-10 text-primary" />}
-                  title="AI-Powered Content"
-                  description="Generate persuasive content and talking points for every slide, tailored to your business."
-                />
-              </AnimateOnScroll>
-              <AnimateOnScroll animationDelay="400ms" exitAnimation="up">
-                <FeatureCard
-                  icon={<LayoutTemplate className="h-10 w-10 text-primary" />}
-                  title="Beautiful Templates"
-                  description="Choose from a library of professionally designed templates that impress investors."
-                />
-              </AnimateOnScroll>
-              <AnimateOnScroll animationDelay="600ms" exitAnimation="up">
-                <FeatureCard
-                  icon={<Palette className="h-10 w-10 text-primary" />}
-                  title="Easy Customization"
-                  description="Effortlessly customize colors, fonts, and layouts to match your brand identity."
-                />
-              </AnimateOnScroll>
-              <AnimateOnScroll animationDelay="800ms" exitAnimation="up">
-                <FeatureCard
-                  icon={<BarChart3 className="h-10 w-10 text-primary" />}
-                  title="Analytics & Tracking"
-                  description="Track who views your deck, which slides they engage with, and for how long."
-                />
-              </AnimateOnScroll>
-            </div>
+            <StickyScrollFeatures />
           </div>
         </section>
         
@@ -177,4 +147,3 @@ const Index = () => {
 };
 
 export default Index;
-

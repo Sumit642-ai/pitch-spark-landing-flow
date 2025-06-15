@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export const useScrollAnimation = (options?: IntersectionObserverInit, exitAnimation: 'up' | 'down' = 'down') => {
+export const useScrollAnimation = (options?: IntersectionObserverInit) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [hasBeenVisible, setHasBeenVisible] = useState(false);
@@ -30,11 +30,10 @@ export const useScrollAnimation = (options?: IntersectionObserverInit, exitAnima
   if (isVisible) {
     animationClass = 'animate-fade-in-up';
   } else if (hasBeenVisible) {
-    animationClass = exitAnimation === 'up' ? 'animate-fade-out-up' : 'animate-fade-out-down';
+    animationClass = 'animate-fade-out-down';
   } else {
     animationClass = 'opacity-0';
   }
 
   return { ref, animationClass };
 };
-

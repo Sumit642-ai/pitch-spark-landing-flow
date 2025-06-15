@@ -7,11 +7,10 @@ interface AnimateOnScrollProps {
   className?: string;
   animationDelay?: string;
   options?: IntersectionObserverInit;
-  exitAnimation?: 'up' | 'down';
 }
 
-const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, className, animationDelay, options, exitAnimation = 'down' }) => {
-  const { ref, animationClass } = useScrollAnimation(options, exitAnimation);
+const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, className, animationDelay, options }) => {
+  const { ref, animationClass } = useScrollAnimation(options);
 
   return (
     <div ref={ref} className={`${className || ''} ${animationClass}`} style={{ animationDelay }}>
@@ -21,4 +20,3 @@ const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, className, 
 };
 
 export default AnimateOnScroll;
-
