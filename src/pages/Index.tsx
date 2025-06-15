@@ -41,9 +41,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* About Section */}
-        <AboutSection />
-
         {/* Features Section */}
         <section id="features" className="py-16 sm:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,8 +117,11 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* About Section - Now at the end */}
+        <AboutSection />
         
-        {/* CTA Section - Now using the new creative component */}
+        {/* CTA Section */}
         <CreativeCTASection />
       </main>
       
