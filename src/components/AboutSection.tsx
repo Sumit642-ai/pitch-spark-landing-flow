@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Target, Zap, Users } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -38,11 +39,11 @@ const AboutSection = () => {
           <AnimateOnScroll animationDelay="200ms" className="lg:col-span-1">
             <div className="text-center lg:text-left">
               <div className="relative inline-block">
-                <div className="bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl shadow-2xl">
+                <div className="bg-gradient-to-br from-primary to-secondary p-6 rounded-3xl shadow-2xl">
                   <img 
                     src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
                     alt="Zth Logo" 
-                    className="h-16 w-16 mx-auto lg:mx-0"
+                    className="h-16 w-16 mx-auto lg:mx-0 object-cover object-center rounded-xl"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl -z-10" />

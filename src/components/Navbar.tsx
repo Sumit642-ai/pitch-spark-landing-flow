@@ -20,7 +20,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
                 alt="Zth Logo" 
-                className="h-8 w-8 transition-all duration-300 group-hover:scale-110"
+                className="h-8 w-8 object-cover object-center rounded-md transition-all duration-300 group-hover:scale-110"
               />
               <Sparkles className="h-3 w-3 text-primary/60 absolute -top-1 -right-1 animate-pulse" />
             </div>
