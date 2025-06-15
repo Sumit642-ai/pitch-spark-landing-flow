@@ -1,9 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Target, Zap, Users } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 const AboutSection = () => {
+  const [zoomedCard, setZoomedCard] = useState<number | null>(null);
+
   const uses = [
     {
       icon: <Target className="h-12 w-12 text-primary" />,
@@ -22,8 +24,22 @@ const AboutSection = () => {
     }
   ];
 
+  const handleCardClick = (index: number) => {
+    setZoomedCard(prev => (prev === index ? null : index));
+  };
+
+  const closeZoom = () => {
+    setZoomedCard(null);
+  };
+
   return (
     <section id="about" className="py-16 sm:py-20 bg-background">
+      {zoomedCard !== null && (
+        <div
+          className="fixed inset-0 bg-black/60 z-20"
+          onClick={closeZoom}
+        />
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -60,7 +76,10 @@ const AboutSection = () => {
               animationDelay={`${400 + index * 200}ms`}
               className="lg:col-span-1"
             >
-              <div className="bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div 
+                className={`bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer ${zoomedCard === index ? 'scale-110 z-30' : ''}`}
+                onClick={() => handleCardClick(index)}
+              >
                 <div className="text-center mb-4">
                   <div className="bg-primary/10 rounded-full p-4 inline-block mb-4">
                     {use.icon}
