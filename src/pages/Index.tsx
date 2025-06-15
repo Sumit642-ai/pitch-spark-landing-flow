@@ -1,8 +1,7 @@
-
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import PricingCard from "@/components/PricingCard";
+import TiltablePricingCard from "@/components/TiltablePricingCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import StickyScrollFeatures from "@/components/StickyScrollFeatures";
 
@@ -65,7 +64,7 @@ const Index = () => {
             </AnimateOnScroll>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <AnimateOnScroll animationDelay="200ms">
-                <PricingCard
+                <TiltablePricingCard
                   title="Starter"
                   price="$0"
                   priceDescription="/month"
@@ -79,7 +78,7 @@ const Index = () => {
                 />
               </AnimateOnScroll>
               <AnimateOnScroll animationDelay="400ms">
-                <PricingCard
+                <TiltablePricingCard
                   title="Pro"
                   price="$25"
                   priceDescription="/month"
@@ -96,7 +95,7 @@ const Index = () => {
                 />
               </AnimateOnScroll>
               <AnimateOnScroll animationDelay="600ms">
-                <PricingCard
+                <TiltablePricingCard
                   title="Enterprise"
                   price="Custom"
                   priceDescription=""

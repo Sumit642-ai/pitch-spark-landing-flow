@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from 'lucide-react';
 
-interface PricingCardProps {
+export interface PricingCardProps {
   title: string;
   price: string;
   priceDescription: string;
