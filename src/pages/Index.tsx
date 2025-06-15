@@ -1,8 +1,8 @@
-
 import Navbar from "@/components/Navbar";
 import FeatureCard from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, BrainCircuit, LayoutTemplate, Palette } from "lucide-react";
+import PricingCard from "@/components/PricingCard";
 
 const Index = () => {
   return (
@@ -58,6 +58,62 @@ const Index = () => {
                 icon={<BarChart3 className="h-10 w-10 text-blue-600" />}
                 title="Analytics & Tracking"
                 description="Track who views your deck, which slides they engage with, and for how long."
+              />
+            </div>
+          </div>
+        </section>
+        
+        {/* Pricing Section */}
+        <section id="pricing" className="py-20 sm:py-28">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                Choose the plan that's right for you
+              </h2>
+              <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Start for free, then upgrade when you're ready to unlock more power.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <PricingCard
+                title="Starter"
+                price="$0"
+                priceDescription="/month"
+                features={[
+                  "1 user",
+                  "3 pitch decks",
+                  "AI content generation",
+                  "Standard templates",
+                ]}
+                buttonText="Get Started"
+              />
+              <PricingCard
+                title="Pro"
+                price="$25"
+                priceDescription="/month"
+                features={[
+                  "Up to 5 users",
+                  "Unlimited pitch decks",
+                  "Advanced AI features",
+                  "Premium templates",
+                  "Custom branding",
+                  "Analytics & tracking"
+                ]}
+                buttonText="Start Free Trial"
+                isFeatured={true}
+              />
+              <PricingCard
+                title="Enterprise"
+                price="Custom"
+                priceDescription=""
+                features={[
+                  "Unlimited users",
+                  "Dedicated support",
+                  "Team collaboration features",
+                  "Custom integrations",
+                  "Advanced security",
+                ]}
+                buttonText="Contact Sales"
               />
             </div>
           </div>
