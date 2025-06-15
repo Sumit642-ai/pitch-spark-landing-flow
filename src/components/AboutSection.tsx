@@ -53,19 +53,24 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
           {/* Company Logo Column */}
           <AnimateOnScroll animationDelay="200ms" className="lg:col-span-1">
-            <div className="text-center lg:text-left">
-              <div className="relative inline-block">
-                <div className="bg-gradient-to-br from-primary to-secondary p-6 rounded-3xl shadow-2xl">
-                  <img 
-                    src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
-                    alt="Zth Logo" 
-                    className="h-16 w-16 mx-auto lg:mx-0 object-cover object-center rounded-xl"
-                  />
+            <div
+              className={`transition-all duration-300 cursor-pointer ${zoomedCard === -1 ? 'scale-125 z-30' : 'hover:-translate-y-2'}`}
+              onClick={() => handleCardClick(-1)}
+            >
+              <div className="text-center lg:text-left">
+                <div className="relative inline-block">
+                  <div className="bg-gradient-to-br from-primary to-secondary p-6 rounded-3xl shadow-2xl">
+                    <img 
+                      src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
+                      alt="Zth Logo" 
+                      className="h-16 w-16 mx-auto lg:mx-0 object-cover object-center rounded-xl"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl -z-10" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl -z-10" />
+                <h3 className="text-2xl font-bold text-foreground mt-6 mb-2">Zth</h3>
+                <p className="text-muted-foreground">Igniting Ideas Through Design</p>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mt-6 mb-2">Zth</h3>
-              <p className="text-muted-foreground">Igniting Ideas Through Design</p>
             </div>
           </AnimateOnScroll>
 
