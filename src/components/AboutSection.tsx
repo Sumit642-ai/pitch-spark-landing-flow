@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Sparkles, Target, Zap, Users } from 'lucide-react';
+import { Target, Zap, Users } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 const AboutSection = () => {
@@ -40,7 +39,11 @@ const AboutSection = () => {
             <div className="text-center lg:text-left">
               <div className="relative inline-block">
                 <div className="bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl shadow-2xl">
-                  <Sparkles className="h-16 w-16 text-white mx-auto lg:mx-0" />
+                  <img 
+                    src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
+                    alt="Zth Logo" 
+                    className="h-16 w-16 mx-auto lg:mx-0"
+                  />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl -z-10" />
               </div>

@@ -1,5 +1,5 @@
 
-import { Presentation, Menu, Sparkles } from "lucide-react";
+import { Menu, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -17,7 +17,11 @@ const Navbar = () => {
           {/* Logo and Brand with enhanced styling */}
           <div className="flex items-center space-x-3 group">
             <div className="relative">
-              <Presentation className="h-8 w-8 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
+              <img 
+                src="/lovable-uploads/4415eebf-5acd-45f9-9187-da6939d4dadd.png" 
+                alt="Zth Logo" 
+                className="h-8 w-8 transition-all duration-300 group-hover:scale-110"
+              />
               <Sparkles className="h-3 w-3 text-primary/60 absolute -top-1 -right-1 animate-pulse" />
             </div>
             <h1 className="text-xl font-bold bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent hover:from-primary hover:via-foreground hover:to-primary transition-all duration-500">
