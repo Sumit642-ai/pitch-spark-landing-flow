@@ -7,6 +7,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import StickyScrollFeatures from "@/components/StickyScrollFeatures";
 import HeroBackground from "@/components/HeroBackground";
 import CreativeCTASection from "@/components/CreativeCTASection";
+import AboutSection from "@/components/AboutSection";
 
 const Index = () => {
   return (
@@ -39,6 +40,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* About Section */}
+        <AboutSection />
 
         {/* Features Section */}
         <section id="features" className="py-16 sm:py-20">
