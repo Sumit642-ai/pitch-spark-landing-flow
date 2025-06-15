@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -12,7 +13,7 @@ const Index = () => {
 
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-24 sm:py-32">
+        <section className="py-20 sm:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <AnimateOnScroll animationDelay="200ms">
@@ -37,9 +38,9 @@ const Index = () => {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="py-20 sm:py-28">
+        <section id="features" className="py-16 sm:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <AnimateOnScroll className="text-center mb-16">
+            <AnimateOnScroll className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Everything you need to create the perfect pitch
               </h2>
@@ -52,9 +53,9 @@ const Index = () => {
         </section>
         
         {/* Pricing Section */}
-        <section id="pricing" className="py-20 sm:py-28 bg-secondary">
+        <section id="pricing" className="py-16 sm:py-20 bg-secondary">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <AnimateOnScroll className="text-center mb-16">
+            <AnimateOnScroll className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Choose the plan that's right for you
               </h2>
@@ -115,8 +116,8 @@ const Index = () => {
         
         {/* CTA Section */}
         <section className="bg-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <AnimateOnScroll className="text-center bg-card rounded-2xl p-12 border shadow-xl">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <AnimateOnScroll className="text-center bg-card rounded-2xl p-10 border shadow-xl">
               <h2 className="text-3xl font-bold text-foreground mb-4">Ready to build your winning pitch?</h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
                 Join thousands of startups and founders who trust PitchSpark to create stunning presentations.
@@ -130,7 +131,7 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-secondary py-8">
+      <footer className="bg-secondary py-6">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">

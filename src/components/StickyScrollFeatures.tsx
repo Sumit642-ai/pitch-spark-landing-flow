@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import FeatureCard from './FeatureCard';
 import { BrainCircuit, LayoutTemplate, Palette, BarChart3 } from 'lucide-react';
@@ -61,7 +60,7 @@ const StickyScrollFeatures = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const containerHeight = `${featuresData.length * 80}vh`;
+  const containerHeight = `${featuresData.length * 60}vh`;
 
   return (
     <div ref={containerRef} className="relative max-w-3xl mx-auto" style={{ height: containerHeight }}>
