@@ -20,16 +20,20 @@ const TodoForm = ({ onAddTodo }: TodoFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex gap-3 mb-6">
       <Input
         type="text"
-        placeholder="Add a new todo..."
+        placeholder="Add a new task..."
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        className="flex-1"
+        className="flex-1 h-12 text-lg border-gray-300 focus:border-blue-500 focus:ring-blue-500"
       />
-      <Button type="submit" size="icon">
-        <Plus className="h-4 w-4" />
+      <Button 
+        type="submit" 
+        className="h-12 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium"
+      >
+        <Plus className="h-5 w-5 mr-2" />
+        Add Task
       </Button>
     </form>
   );
