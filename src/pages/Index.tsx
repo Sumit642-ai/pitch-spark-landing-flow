@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -12,11 +13,8 @@ const Index = () => {
 
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background z-0"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] z-10"></div>
-          
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 relative z-20">
+        <section className="py-24 sm:py-32">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <AnimateOnScroll animationDelay="200ms">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
@@ -55,7 +53,7 @@ const Index = () => {
         </section>
         
         {/* Pricing Section */}
-        <section id="pricing" className="py-20 sm:py-28 bg-card/50">
+        <section id="pricing" className="py-20 sm:py-28 bg-secondary">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimateOnScroll className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -119,7 +117,7 @@ const Index = () => {
         {/* CTA Section */}
         <section className="bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <AnimateOnScroll className="text-center bg-card rounded-2xl p-12 border border-white/10 shadow-xl">
+            <AnimateOnScroll className="text-center bg-card rounded-2xl p-12 border shadow-xl">
               <h2 className="text-3xl font-bold text-foreground mb-4">Ready to build your winning pitch?</h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
                 Join thousands of startups and founders who trust PitchSpark to create stunning presentations.
@@ -133,7 +131,7 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-card py-8">
+      <footer className="bg-secondary py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">

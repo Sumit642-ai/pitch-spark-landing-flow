@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -17,7 +16,7 @@ interface PricingCardProps {
 const PricingCard = ({ title, price, priceDescription, features, buttonText, isFeatured = false, className }: PricingCardProps) => {
   return (
     <Card 
-      className={`flex flex-col h-full ${isFeatured ? 'border-primary shadow-2xl shadow-primary/20 ring-2 ring-primary' : 'shadow-lg bg-card border border-white/10'} ${className || ''}`}
+      className={`flex flex-col h-full ${isFeatured ? 'border-primary shadow-2xl shadow-primary/20 ring-2 ring-primary' : 'shadow-lg bg-card border'} ${className || ''}`}
     >
       <CardHeader className="p-6">
         <CardTitle className="text-xl font-bold">{title}</CardTitle>
@@ -44,4 +43,3 @@ const PricingCard = ({ title, price, priceDescription, features, buttonText, isF
 };
 
 export default PricingCard;
-
