@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Target, Zap, Users } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -54,7 +53,7 @@ const AboutSection = () => {
           {/* Company Logo Column */}
           <AnimateOnScroll animationDelay="200ms" className="lg:col-span-1">
             <div
-              className={`transition-all duration-300 cursor-pointer ${zoomedCard === -1 ? 'scale-125 z-30' : 'hover:-translate-y-2'}`}
+              className={`transition-all duration-300 cursor-pointer ${zoomedCard === -1 ? 'scale-50 z-30' : 'hover:-translate-y-2'}`}
               onClick={() => handleCardClick(-1)}
             >
               <div className="text-center lg:text-left">
@@ -82,7 +81,7 @@ const AboutSection = () => {
               className="lg:col-span-1"
             >
               <div 
-                className={`bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer ${zoomedCard === index ? 'scale-125 z-30' : ''}`}
+                className={`bg-card border rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer ${zoomedCard === index ? 'scale-50 z-30' : ''}`}
                 onClick={() => handleCardClick(index)}
               >
                 <div className="text-center mb-4">
