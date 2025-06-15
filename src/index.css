@@ -7,38 +7,38 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 40 10% 25%;
-    --card: 0 0% 100%;
-    --card-foreground: 40 10% 25%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 40 10% 25%;
-    --primary: 158 29% 45%;
-    --primary-foreground: 155 33% 96%;
-    --secondary: 40 25% 94%;
-    --secondary-foreground: 40 10% 25%;
-    --muted: 40 25% 94%;
-    --muted-foreground: 40 8% 45%;
-    --accent: 40 25% 94%;
-    --accent-foreground: 40 10% 25%;
+    --background: 210 40% 98%;
+    --foreground: 210 40% 15%;
+    --card: 210 20% 97%;
+    --card-foreground: 210 40% 15%;
+    --popover: 210 20% 97%;
+    --popover-foreground: 210 40% 15%;
+    --primary: 210 60% 45%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 210 40% 20%;
+    --muted: 210 30% 94%;
+    --muted-foreground: 210 30% 40%;
+    --accent: 210 50% 88%;
+    --accent-foreground: 210 40% 20%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 40 20% 90%;
-    --input: 40 20% 90%;
-    --ring: 158 29% 45%;
+    --border: 210 30% 88%;
+    --input: 210 30% 88%;
+    --ring: 210 60% 45%;
     --radius: 0.5rem;
-    --sidebar-background: 40 33% 97%;
-    --sidebar-foreground: 40 10% 25%;
-    --sidebar-primary: 158 29% 45%;
-    --sidebar-primary-foreground: 155 33% 96%;
-    --sidebar-accent: 40 25% 94%;
-    --sidebar-accent-foreground: 40 10% 25%;
-    --sidebar-border: 40 20% 90%;
-    --sidebar-ring: 158 29% 45%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 210 40% 15%;
+    --sidebar-primary: 210 60% 45%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 210 30% 92%;
+    --sidebar-accent-foreground: 210 40% 20%;
+    --sidebar-border: 210 30% 88%;
+    --sidebar-ring: 210 60% 45%;
   }
 
   .dark {
-    /* We are making dark mode default, so these variables are now in :root */
+    /* We are making light mode default, so these variables remain in :root */
   }
 }
 
