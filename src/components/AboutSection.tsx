@@ -27,7 +27,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            About PitchSpark
+            About Zth
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Empowering businesses to tell their story through beautifully crafted presentations
@@ -44,7 +44,7 @@ const AboutSection = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl -z-10" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mt-6 mb-2">PitchSpark</h3>
+              <h3 className="text-2xl font-bold text-foreground mt-6 mb-2">Zth</h3>
               <p className="text-muted-foreground">Igniting Ideas Through Design</p>
             </div>
           </AnimateOnScroll>
@@ -77,7 +77,7 @@ const AboutSection = () => {
         <AnimateOnScroll animationDelay="1000ms" className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-8">
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Founded by entrepreneurs for entrepreneurs, PitchSpark combines cutting-edge AI technology 
+              Founded by entrepreneurs for entrepreneurs, Zth combines cutting-edge AI technology 
               with beautiful design principles to help you create presentations that not only look stunning 
               but also effectively communicate your vision and drive results.
             </p>

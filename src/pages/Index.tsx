@@ -27,7 +27,7 @@ const Index = () => {
               </AnimateOnScroll>
               <AnimateOnScroll animationDelay="400ms">
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  PitchSpark is an AI-powered platform that helps you craft compelling presentations effortlessly. Turn your ideas into investor-ready pitch decks.
+                  Zth is an AI-powered platform that helps you craft compelling presentations effortlessly. Turn your ideas into investor-ready pitch decks.
                 </p>
               </AnimateOnScroll>
               <AnimateOnScroll animationDelay="600ms">
@@ -130,7 +130,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">
-              © 2025 PitchSpark. All Rights Reserved.
+              © 2025 Zth. All Rights Reserved.
             </p>
           </div>
         </div>
